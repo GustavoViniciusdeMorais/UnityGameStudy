@@ -7,6 +7,7 @@ TagManager:
   - ball
   - floor1
   - floor2
+  - scenePlayer
   layers:
   - Default
   - TransparentFX

@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 430842617}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: scenePlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 430842612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff77358e7210c83c962b4fddc5df5fe, type: 3}
+  m_Script: {fileID: 11500000, guid: fc391a60b0f9596dea166486847b2156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1959680922
@@ -437,6 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959680923}
   - component: {fileID: 1959680924}
+  - component: {fileID: 1959680925}
   m_Layer: 0
   m_Name: TriggerObject
   m_TagString: Untagged
@@ -452,7 +453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959680922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.51, y: -1.11, z: 0.115936555}
+  m_LocalPosition: {x: -4.6, y: -1.17, z: 0.115936555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,6 +486,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.444108, y: 0.4917553}
   m_EdgeRadius: 0
+--- !u!114 &1959680925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959680922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b9befd06c5291cda9aa0ffcce03673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeAction: 0
+  entity: {fileID: 397934172}
 --- !u!1 &2115374634
 GameObject:
   m_ObjectHideFlags: 0
