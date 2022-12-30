@@ -1,22 +1,3 @@
-# Unity Study
-
-Created by: Gustavo Vinicius
-
-### Add script to object
-```
-Create the C# script at the Assets footer bar.
-Write the code as follow.
-
-To add the code to the game object, select the game object
-click at the Add Component button, select Scripts option
-and then select your desired script.
-If you put your scripts attributes with public view
-you will be able to drag the game objects to the attributes
-to use them inside your script.
-```
-
-### Move object code
-```c#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +22,3 @@ public class FasterInputMove : MonoBehaviour
         }
     }
 }
-```
-
-![game](./imgs/GameExample.png)
