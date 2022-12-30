@@ -8,6 +8,7 @@ TagManager:
   - floor1
   - floor2
   - scenePlayer
+  - item
   layers:
   - Default
   - TransparentFX
