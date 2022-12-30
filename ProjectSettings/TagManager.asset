@@ -10,6 +10,7 @@ TagManager:
   - scenePlayer
   - item
   - CollectSound
+  - bomb
   layers:
   - Default
   - TransparentFX

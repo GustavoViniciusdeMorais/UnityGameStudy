@@ -73,4 +73,13 @@ public class NinjaMove : MonoBehaviour
             canJump = false;
         }
     }
+    
+    void OnTriggerEnter2D(Collider2D otherObj)
+    {
+    	if (otherObj.gameObject.CompareTag("bomb")) {
+    		alive = false;
+    		animator.SetBool("run", false);
+			animator.SetBool("dead", true);
+    	}
+    }
 }
