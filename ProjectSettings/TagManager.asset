@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ball
+  - floor1
+  - floor2
   layers:
   - Default
   - TransparentFX

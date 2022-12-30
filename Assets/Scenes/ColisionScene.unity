@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 148414527}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 1997414858}
   m_Layer: 0
   m_Name: blackbar
-  m_TagString: Untagged
+  m_TagString: floor1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 2017299098}
   m_Layer: 0
   m_Name: blackbar (1)
-  m_TagString: Untagged
+  m_TagString: floor2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
