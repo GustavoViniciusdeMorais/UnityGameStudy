@@ -6,6 +6,7 @@ public class CollectItems : MonoBehaviour
 {
     private float speed = 2.5f;
     public int items = 0;
+    public GameObject itemSound;
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,15 @@ public class CollectItems : MonoBehaviour
     void OnTriggerEnter2D(Collider2D otherObj)
     {
         if (otherObj.gameObject.CompareTag("item")) {
+            Instantiate(
+                itemSound,
+                new Vector3(
+                    this.gameObject.transform.position.x,
+                    this.gameObject.transform.position.y,
+                    this.gameObject.transform.position.z
+                ),
+                Quaternion.identity
+            );
             items++;
             Destroy(otherObj.gameObject);
         }

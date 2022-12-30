@@ -9,6 +9,7 @@ TagManager:
   - floor2
   - scenePlayer
   - item
+  - CollectSound
   layers:
   - Default
   - TransparentFX
