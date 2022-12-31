@@ -14,6 +14,7 @@ public class NinjaMove : MonoBehaviour
     public bool alive = true;
     public GameObject kunai;
     public GameObject kunaiPoint;
+    public Vector3 scale;
     
     // Start is called before the first frame update
     void Start()
@@ -53,15 +54,29 @@ public class NinjaMove : MonoBehaviour
 			
 			// Kunai code
 			if (Input.GetKeyDown(KeyCode.Space)) {
+				if (!face) {
+					kunaiPoint.transform.rotation = Quaternion.Euler(
+						kunaiPoint.transform.rotation.x,
+						kunaiPoint.transform.rotation.y,
+						180
+					);
+				} else {
+					kunaiPoint.transform.rotation = Quaternion.Euler(
+						kunaiPoint.transform.rotation.x,
+						kunaiPoint.transform.rotation.y,
+						kunaiPoint.transform.rotation.z
+					);
+				}
+				
 				Instantiate(
-                kunai,
-                new Vector3(
-                    kunaiPoint.transform.position.x,
-                    kunaiPoint.transform.position.y,
-                    kunai.transform.rotation.z
-                ),
-                kunaiPoint.transform.rotation
-            );
+		            kunai,
+		            new Vector3(
+		                kunaiPoint.transform.position.x,
+		                kunaiPoint.transform.position.y,
+		                kunaiPoint.transform.position.y
+		            ),
+		            kunaiPoint.transform.rotation
+	            );
 			}
 		}
     }
@@ -69,7 +84,7 @@ public class NinjaMove : MonoBehaviour
     void Flip()
     {
         face = !face;
-        Vector3 scale = player.transform.localScale;
+        scale = player.transform.localScale;
         scale.x *= -1;
         player.transform.localScale = scale;
     }
