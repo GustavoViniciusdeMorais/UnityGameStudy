@@ -6,8 +6,8 @@ public class NinjaMove : MonoBehaviour
 {
     public bool face = true;
     public GameObject player;
-    public float speed = 2.5f;
-    public float force = 6.5f;
+    public float speed = 5.5f;
+    public float force = 10.5f;
     public Rigidbody2D playerRb;
     public bool canJump = false;
     public Animator animator;

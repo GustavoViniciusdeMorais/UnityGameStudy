@@ -11,6 +11,7 @@ TagManager:
   - item
   - CollectSound
   - bomb
+  - Enemy
   layers:
   - Default
   - TransparentFX
