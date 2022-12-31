@@ -12,6 +12,8 @@ public class NinjaMove : MonoBehaviour
     public bool canJump = false;
     public Animator animator;
     public bool alive = true;
+    public GameObject kunai;
+    public GameObject kunaiPoint;
     
     // Start is called before the first frame update
     void Start()
@@ -38,7 +40,7 @@ public class NinjaMove : MonoBehaviour
 				transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
 				animator.SetBool("idle", false);
 				animator.SetBool("run", true);
-			}else if (Input.GetKeyDown(KeyCode.Space) && canJump == true) {
+			}else if (Input.GetKeyDown(KeyCode.UpArrow) && canJump == true) {
 				playerRb.AddForce(new Vector2(0, force ), ForceMode2D.Impulse);
 				animator.SetBool("idle", false);
 				animator.SetBool("run", false);
@@ -49,6 +51,18 @@ public class NinjaMove : MonoBehaviour
 				animator.SetBool("idle", true);
 			}
 			
+			// Kunai code
+			if (Input.GetKeyDown(KeyCode.Space)) {
+				Instantiate(
+                kunai,
+                new Vector3(
+                    kunaiPoint.transform.position.x,
+                    kunaiPoint.transform.position.y,
+                    kunai.transform.rotation.z
+                ),
+                kunaiPoint.transform.rotation
+            );
+			}
 		}
     }
     
