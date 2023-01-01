@@ -7,13 +7,14 @@ public class Robot : MonoBehaviour
 	public float speed = 5.5f;
 	public bool canShot = false;
 	public float distance;
-	public GameObject ninja;
+	public Transform ninja;
 	public bool face = true;
+	public Animator animator;
 	
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,11 +31,19 @@ public class Robot : MonoBehaviour
         	&& !face
         ) {
         	Flip();
-        } else if (
+        }else if (
         	(ninja.transform.position.x < this.transform.position.x)
         	&& face
         ) {
         	Flip();
+        }
+        
+        if (canShot && distance < 10.0f) {
+        	animator.SetBool("idle", false);
+        	animator.SetBool("shot", true);
+        } else {
+        	animator.SetBool("shot", false);
+        	animator.SetBool("idle", true);
         }
     }
     

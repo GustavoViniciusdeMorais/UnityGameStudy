@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 581234179752101091}
   - component: {fileID: 581234179752101090}
   - component: {fileID: 581234179752101101}
-  - component: {fileID: 5834337209728834495}
+  - component: {fileID: 8762224617662458447}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Enemy
@@ -170,9 +170,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 50, y: 5.56}
+  m_Size: {x: 10, y: 5.56}
   m_EdgeRadius: 0
---- !u!114 &5834337209728834495
+--- !u!114 &8762224617662458447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,5 +187,6 @@ MonoBehaviour:
   speed: 5.5
   canShot: 0
   distance: 0
-  ninja: {fileID: 4425379927574063779, guid: 69f51f1acd62eb8b6ac8272cf713ab7a, type: 3}
+  ninja: {fileID: 0}
   face: 1
+  animator: {fileID: 0}
