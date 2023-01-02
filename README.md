@@ -2,6 +2,11 @@
 
 Created by: Gustavo Vinicius
 
+```sh
+Unity Editor version is 2021.3.16f1 Personal OpenGL 4.5
+UnityHub version 3.4.1
+```
+
 ### Add script to object
 ```
 Create the C# script at the Assets footer bar.
