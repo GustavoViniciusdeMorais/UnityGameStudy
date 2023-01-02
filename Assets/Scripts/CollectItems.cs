@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CollectItems : MonoBehaviour
 {
     private float speed = 2.5f;
     public int items = 0;
     public GameObject itemSound;
+    public TMP_Text score;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        //score = GameObject.FindWithTag("Score").GetComponent<UnityEngine.UI.Text>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class CollectItems : MonoBehaviour
                 Quaternion.identity
             );
             items++;
+            score.text = items.ToString();
             Destroy(otherObj.gameObject);
         }
     }

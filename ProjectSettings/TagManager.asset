@@ -12,6 +12,7 @@ TagManager:
   - CollectSound
   - bomb
   - Enemy
+  - Score
   layers:
   - Default
   - TransparentFX
