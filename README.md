@@ -7,6 +7,11 @@ Unity Editor version is 2021.3.16f1 Personal OpenGL 4.5
 UnityHub version 3.4.1
 ```
 
+### For Ubuntu version 22.04
+```
+sudo apt install libssl1.0-dev
+```
+
 ### Add script to object
 ```
 Create the C# script at the Assets footer bar.
